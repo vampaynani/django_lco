@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Course</title>
+</head>
+
+<body>
+  <h1>{{ course.title }}</h1>
+  <h2>{{ course.price }}</h2>
+  <ul>
+    {% for video in course.video_set.all %}
+    <li><a href="/courses/{{ course.slug }}/{{video.id}}">{{ video.title }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "model": "viewer.course",
+    "pk": 1,
+    "fields": {
+      "title": "Introduction to Structured Bags",
+      "slug": "handbags",
+      "price": "99",
+      "created_at": "2020-06-12 02:38:29.107947"
+    }
+  },
+  {
+    "model": "viewer.course",
+    "pk": 2,
+    "fields": {
+      "title": "Professional Tutu Making",
+      "slug": "tutu",
+      "price": "99.99",
+      "created_at": "2020-06-12 02:38:29.107947"
+    }
+  },
+  {
+    "model": "viewer.course",
+    "pk": 3,
+    "fields": {
+      "title": "Hat Making",
+      "slug": "hats",
+      "price": "149.99",
+      "created_at": "2020-06-12 02:38:29.107947"
+    }
+  }
+]

@@ -4,12 +4,15 @@
 
 {% block content %}
 {% if course_list %}
-<ul>
-  {% for course in course_list %}
-  <li><a href="{% url 'detail' course.slug %}">{{ course.title }}</a></li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No courses are available.</p>
-{% endif %}
+<div class="courses-index">
+  <ul>
+    {% for course in course_list %}
+    <li><a href="{% url 'detail' course.slug %}">{{ course.title }}<span class="material-icons">navigate_next</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No courses are available.</p>
+  {% endif %}
+</div>
 {% endblock %}

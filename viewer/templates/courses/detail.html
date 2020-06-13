@@ -3,15 +3,17 @@
 {% block title %}La Couturière | {{course.title}}{% endblock %}
 
 {% block content %}
-<h1>{{ course.title }}</h1>
-<h2>${{ course.price }}</h2>
-<ol>
-  {% for video in course.video_set.all %}
-  <li>
-    <h3>{{ video.title }}</h3>
-    <video controls>
-      <source src="{{video.video_url}}" type="application/x-mpegURL"></video>
-  </li>
-  {% endfor %}
-</ol>
+<div class="courses-detail">
+  <h1>{{ course.title }}</h1>
+  <h2>${{ course.price }}</h2>
+  <ol>
+    {% for video in course.video_set.all %}
+    <li>
+      <h3>{{ video.title }}</h3>
+      <video controls>
+        <source src="{{video.video_url}}" type="video/mp4"></video>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
 {% endblock %}

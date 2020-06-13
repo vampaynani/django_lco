@@ -78,3 +78,49 @@ body{
     padding: 1em 3em;
   } 
 }
+
+.courses-index ul{
+  margin: 1em;
+  list-style: none;
+}
+.courses-index ul li{
+  border-bottom: 2px solid #03178C;
+}
+.courses-index ul li a{
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #03178C;
+  transition: all .2s;
+}
+.courses-index ul li a:hover{
+  background: #03178C;
+  color: #FFF;
+}
+
+.courses-detail{
+  margin: 1em;
+}
+.courses-detail h1{
+  color: #020F59;
+}
+.courses-detail h2{
+  color: #03178C;
+}
+.courses-detail video{
+  width: 100%;
+}
+.courses-detail ol{
+  margin: 0.5em;
+}
+
+@media (min-width:768px){
+  .courses-detail{
+    margin: 2em;
+  }
+  .courses-detail ol{
+    margin: 1em;
+  }
+}

@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends "pages/base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <title>Courses</title>
-</head>
+{% block title %}La Couturière{% endblock %}
 
-<body>
-  {% if course_list %}
-  <ul>
-    {% for course in course_list %}
-    <li><a href="{% url 'detail' course.slug %}">{{ course.title }}</a></li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p>No courses are available.</p>
-  {% endif %}
-</body>
-
-</html>
+{% block content %}
+{% if course_list %}
+<ul>
+  {% for course in course_list %}
+  <li><a href="{% url 'detail' course.slug %}">{{ course.title }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No courses are available.</p>
+{% endif %}
+{% endblock %}

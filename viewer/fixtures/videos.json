@@ -1,0 +1,35 @@
+[
+  {
+    "model": "viewer.video",
+    "pk": 1,
+    "fields": {
+      "title": "Introduction to Structured Bags",
+      "description": "handbags",
+      "video_url": "99",
+      "created_at": "2020-06-12 02:38:29.107947",
+      "course": 1
+    }
+  },
+  {
+    "model": "viewer.video",
+    "pk": 2,
+    "fields": {
+      "title": "Professional Tutu Making",
+      "description": "tutu",
+      "video_url": "99.99",
+      "created_at": "2020-06-12 02:38:29.107947",
+      "course": 2
+    }
+  },
+  {
+    "model": "viewer.video",
+    "pk": 3,
+    "fields": {
+      "title": "Hat Making",
+      "description": "hats",
+      "video_url": "149.99",
+      "created_at": "2020-06-12 02:38:29.107947",
+      "course": 3
+    }
+  }
+]

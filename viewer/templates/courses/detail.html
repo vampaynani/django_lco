@@ -1,4 +1,5 @@
 {% extends "pages/base.html" %}
+{% load md2 %}
 
 {% block title %}La Couturière | {{course.title}}{% endblock %}
 
@@ -11,7 +12,10 @@
     <li>
       <h3>{{ video.title }}</h3>
       <video controls>
-        <source src="{{video.video_url}}" type="video/mp4"></video>
+        <source src="{{ video.video_url }}" type="video/mp4"></video>
+      <div>
+        {{ video.description|markdown:"safe" }}
+      </div>
     </li>
     {% endfor %}
   </ol>
